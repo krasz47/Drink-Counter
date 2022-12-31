@@ -26,7 +26,7 @@ void endTime() {
 }
 
 int main() {
-    string option{};
+    std::string option{};
     while (true) {
         std::cout << "Units:\t\t" << AlcoholCounter / 10 << "\nTimeLeft:\t" << endTime() <<
             "\n=-=-=-=-=-=-=-=" << "\"add\"\t\t add alcohol to count\n\"sub\" subtract alcohol from count";
