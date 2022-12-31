@@ -14,10 +14,17 @@ void reduceAlcohol() {
 }
 
 void addAlcohol() {
-    float temp{};
-    std::cout << "ML of alcohol to add: ";
-    std::cin >> temp;
-    AlcoholCounter += temp;
+    float tempml{};
+	float tempabv{};
+    std::cout << "ML of drink drank: ";
+    std::cin >> tempml;
+	std::cout << "ABV of said drink: ";
+	std::cin >> tempabv;
+    AlcoholCounter += calcML(tempml, tempabv);
+}
+
+float calcML (ml, abv) {
+	return ml * (abv/100);
 }
 
 int main() {
