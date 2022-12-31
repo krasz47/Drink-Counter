@@ -23,7 +23,7 @@ void addAlcohol() {
     AlcoholCounter += calcML(tempml, tempabv);
 }
 
-float calcML (ml, abv) {
+float calcML (float ml, float abv) {
 	return ml * (abv/100);
 }
 
