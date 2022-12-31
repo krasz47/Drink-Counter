@@ -23,8 +23,8 @@ void addAlcohol() {
 int main() {
     std::string option{};
     while (true) {
-        std::cout << "Units:\t\t" << AlcoholCounter / 10 << "\nTimeLeft:\t" << AlcoholCounter/10 <<
-            "\n=-=-=-=-=-=-=-=" << "\"add\"\t\t add alcohol to count\n\"sub\" subtract alcohol from count";
+        std::cout << "\nUnits:\t\t" << AlcoholCounter / 10 << "\nTimeLeft:\t" << AlcoholCounter / 10 << " hours" <<
+            "\n=-=-=-=-=-=-=-=" << "\n\"add\"\t\t add alcohol to count\n\"sub\"\t\t subtract alcohol from count\n\n";
 
         std::cout << "Enter option: ";
         std::cin >> option;
@@ -32,7 +32,7 @@ int main() {
             addAlcohol();
         if (option == "sub")
             reduceAlcohol();
-        else
-            std::cout << "Invalid option.";
+        if (option != "add" && option != "sub")
+            std::cout << "Invalid option.\n";
     }
 }
