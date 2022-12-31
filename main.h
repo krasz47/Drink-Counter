@@ -5,6 +5,4 @@ void reduceAlcohol();
 
 void addAlcohol();
 
-void endTime();
-
 #endif
