@@ -33,6 +33,6 @@ int main() {
         if (option == "sub")
             reduceAlcohol();
         else
-            std::cout << "Invalid option."
+            std::cout << "Invalid option.";
     }
 }
