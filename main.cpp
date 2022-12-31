@@ -15,7 +15,7 @@ void addAlcohol() {
     float temp{};
     std::cout << "ML of alcohol to add: ";
     std::cin >> temp;
-    AlcoholCounter += ml;
+    AlcoholCounter += temp;
 }
 
 void endTime() {
