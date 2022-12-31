@@ -5,4 +5,6 @@ void reduceAlcohol();
 
 void addAlcohol();
 
+float calmML (float, float);
+
 #endif
